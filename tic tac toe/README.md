@@ -1,50 +1,41 @@
-# React + TypeScript + Vite
+# Крестики-нолики на React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![React](https://img.shields.io/badge/React-18.2.0-blue)](https://react.dev)
+[![Styled Components](https://img.shields.io/badge/Styled_Components-6.0.8-purple)](https://styled-components.com)
 
-Currently, two official plugins are available:
+Игровое приложение с историей ходов и адаптивным дизайном
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![image](https://github.com/user-attachments/assets/a067fd9d-3aa5-475c-b9ff-cc4381c2593c)
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## ✨ Особенности
+- Динамическое отображение статуса игры
+- История ходов с возможностью отката
+- Адаптивный дизайн
+- Плавные анимации
+- UI с использованием Styled Components
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🛠 Установка
+1. Клонировать репозиторий:
+```bash
+git clone https://github.com/enakaeeeena/tic-tac-toe-react.git
+```
+2. Установить зависимости:
+```bash
+npm install
+```
+3. Запустить приложение:
+```bash
+npm run dev
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+## Структура проекта
 ```
+src/
+├── App.jsx        # Основной компонент игры
+├── styles.js      # Стилизованные компоненты
+└── index.css      # Глобальные стили
+```
+
+## 📄 Лицензия
+MIT License
